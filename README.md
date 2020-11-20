@@ -1,5 +1,7 @@
 # arabicTextClassification
-After collecting 40 thousand tweets and preprocessing it, I used word embeddings with arabert and tf-idf along with two neural network architectures and 5 machine learning algorithms. Due to the huge size of the dataset, I chose Amazon SageMaker to train the models
+After collecting 40 thousand tweets and preprocessing it, I used word embeddings with arabert and tf-idf along with two neural network architectures and 5 machine learning algorithms. Due to the huge size of the dataset, I chose Amazon SageMaker to train the models.
+
+
 How do we run the project?
 
 in the fold src we have the most important files that are using for:
