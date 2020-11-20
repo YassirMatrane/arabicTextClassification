@@ -1,0 +1,93 @@
+input[type=range] {
+  -webkit-appearance: none;
+  transition: all .7s ease;
+  width: 60%;
+  margin: 7.95px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: .5vh;
+  cursor: pointer;
+
+  background: var(--main-color);
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  transition: all .7s ease;
+  border: .2vmin solid var(--fore-color);
+  height: 1.5vmax;
+  width: 1.5vmax;
+  border-radius: 100%;
+  background: var(--main-color);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -.6vmax;
+  opacity: .93;
+}
+input[type=range]:hover::-webkit-slider-thumb {
+  border: .2vmin solid var(--main-color);
+  background: var(--fore-color);
+  opacity: .99;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: var(--main-color);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3.1px;
+  cursor: pointer;
+  background: #1c4d4d;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+  border: 2.2px solid #141e00;
+  height: 19px;
+  width: 19px;
+  border-radius: 100%;
+  background: var(--main-color);
+  opacity: .93;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3.1px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #000000;
+  border: 0px solid #010101;
+  border-radius: 0px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #1c4d4d;
+  border: 0px solid #010101;
+  border-radius: 0px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+  border: 2.2px solid #141e00;
+  height: 19px;
+  width: 19px;
+  border-radius: 100%;
+  background: var(--main-color);
+  opacity: .93;
+  cursor: pointer;
+  height: 3.1px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #1c4d4d;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: var(--main-color);
+}

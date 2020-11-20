@@ -1,0 +1,110 @@
+body>div.navbar{
+  width: 100vw;
+  background-color: #0e0e0ee0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+div.navbar>ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+div.navbar>ul li {
+  transition: all .4s ease;
+
+  height: -webkit-fill-available;
+  color: var(--fore-color);
+  width: 100%;
+  text-align: center;
+  flex-direction: column-reverse;
+  padding-top: 2vh;
+  position: relative;
+  bottom: 0vh;
+  border-top: 0vh solid;
+  border-top-color: var(--main-color);
+  border-top-width: 0vh;
+  border-bottom: 0vh solid;
+  border-bottom-color: var(--main-color);
+  border-bottom-width: 0vh;
+}
+div.navbar>ul li:not(:first-child) div {
+  border-left: 0px solid var(--fore-color);
+}
+div.navbar>ul li:not(#openMenu):hover, div.navbar>ul li#openMenu {
+  padding-top: 2vh;
+  background-color: var(--fore-color);
+}
+div.navbar>ul>li:not(#openMenu):hover {
+  border-top-width: 2vh;
+}
+div.navbar>ul>li:not(#openMenu):hover div{
+  padding-bottom: 10vmin;
+}
+div.navbar>ul li>div {
+  height: -webkit-fill-available;
+}
+div.navbar>ul li#openMenu>div {
+  height: 100%;
+  border-bottom: 1vmin solid;
+  border-bottom-color: var(--main-color);
+}
+
+div.navbar>ul>li:not(#openMenu):hover, div.navbar>ul li:not(#openMenu):hover *, div.navbar>ul li#openMenu * {
+  color: #0e0e0ee0;
+  border-left: 0px solid var(--fore-color);
+}
+div.navbar>ul li:hover, div.navbar>ul li:hover + li * {
+  border-left: 0px solid var(--fore-color);
+}
+div.navbar>ul ul {
+    display: none;
+    max-height: 0vh;
+}
+div.navbar>ul>#openMenu ul {
+    width: 100vw;
+    max-height: 14vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+div.navbar>ul.opened>li:not(#openMenu) {
+    width: 0vw;
+}
+div.navbar>ul>#openMenu span{
+  width: 100%;
+  min-width: 25%;
+  position: relative;
+}
+div.navbar>ul>#openMenu ul>li {
+    padding: 2vmin;
+    width: auto;
+}
+div.navbar>ul>#openMenu ul>li span * {
+    float: right;
+    margin-left: 0;
+}
+div.navbar>ul>#openMenu ul>li span b {
+    white-space: nowrap;
+    text-align: right;
+}
+div.navbar>ul>#openMenu ul * {
+    color: #0e0e0ee0;
+}
+div.navbar>ul>#openMenu ul>li>.rangeslider {
+    display: flex;
+}
+div.navbar>ul>#openMenu ul>li>.rangeslider *{
+    display: flex;
+    padding: 0;
+}
+.navbar{
+  text-align: center!important;
+  font-size: 30px!important;
+  background-color: darkslategray!important;
+}

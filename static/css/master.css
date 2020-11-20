@@ -1,0 +1,161 @@
+*{
+  margin: 0 auto;
+  font-family: 'Lato';
+  font-weight: 300;
+  color: var(--fore-color);
+  transition: all .4s ease;
+}
+button,input:focus{
+  outline: none;
+}
+:root {
+  --main-color: darkslategrey;
+  --fore-color: white;
+}
+::-webkit-scrollbar {
+  width: 0vw;
+  display: block;
+  opacity: .3;
+  box-shadow: -0.2vw 0px 1vmin 0.5vmin #00000009;
+  transition: all .7s ease;
+}
+
+*:hover::-webkit-scrollbar {
+  width: 1vw;
+  opacity: .99;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+body{
+  background-color: var(--main-color);
+  height: 100vh;
+}
+
+
+
+
+body>div.container{
+
+  width: 100vw;
+  height: 93vh;
+}
+div.sidetoside
+{
+  position: relative;
+  background-color: #00000004;
+}
+div.sidetoside>div.container
+{
+  position: absolute;
+  border: 1vmin dashed var(--main-color);
+  width: 90%;
+  left: 3.5%;
+  height: 90%;
+  top: 2.5%;
+  padding: 1vmin;
+  border-radius: 10vmin;
+  overflow:hidden;
+}
+div.sidetoside>div.container>.imgContainer
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 9vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -1vmin;
+  overflow: hidden;
+}
+
+div.sidetoside>div.container>*{
+  width: 100%;
+  font-size: 32pt;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+
+div.resultText>div.container
+{
+  border: .5vmin dashed var(--fore-color);
+}
+
+div.resultText>div.container>*{
+  width: 50%;
+  padding-right: 5%;
+  top: 5%;
+  text-align: justify;
+  font-size: xx-large;
+}
+div.resultText>div.container>p
+{
+  max-height: 90%;
+  word-break: break-word;
+  overflow-y: scroll;
+}
+div.resultText>div.container>span {
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  margin-left: 30px;
+}
+div.uploadImage
+{
+  background-color: var(--fore-color);
+}
+div.uploadImage form, div.uploadImage form *
+{
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.uploadImage>div.container>*{
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+div.uploadImage form .buttonPane{
+  display: flex;
+  flex-direction: row;
+}
+div.uploadImage form button{
+  margin: 0vh .3vw;
+  padding: 2vh 3vw;
+  background-color: var(--main-color);
+  color: var(--fore-color);
+  font-size: 17pt;
+  border: none;
+  border-radius: 1vh 1vw;
+  box-shadow: 0px 0px 0px 0px #00000069;
+}
+div.uploadImage form button:hover{
+  color: var(--main-color);
+  background-color: var(--fore-color);
+  box-shadow: 0px 0px 10px 0px #00000069;
+}
+div.uploadImage .imgContainer img
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
